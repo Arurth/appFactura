@@ -102,15 +102,7 @@ public class Factura {
             if (item == null){
                 continue;
             }
-            sb.append(item.getProducto().getCodigo())
-                    .append("\t")
-                    .append(item.getProducto().getNombre())
-                    .append("\t")
-                    .append(item.getProducto().getPrecio())
-                    .append("\t")
-                    .append(item.getCantidad())
-                    .append("\t")
-                    .append(item.calcularImporte())
+            sb.append(item.toString()) //Se pone de forma explicita para poder verlo al momento de debuggear
                     .append("\n");
 
         }
