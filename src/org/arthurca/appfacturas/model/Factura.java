@@ -96,6 +96,7 @@ public class Factura {
                 .append("\n")
                 .append("\n#\tNombre\t$\tCant.\tTotal\n");
 
+
         for (ItemFactura item :this.items){
 
             if (item == null){
